@@ -67,7 +67,8 @@ def main():
         #out_datasets = ['ImageNet10']
         out_datasets = ['iNaturalist','SUN', 'places365']
     elif args.in_dataset in [ 'ImageNet', 'ImageNet100', 'bird200', 'car196', 'food101', 'pet37']:
-         out_datasets = ['iNaturalist','SUN', 'places365', 'dtd']
+         #out_datasets = ['iNaturalist','SUN', 'places365', 'dtd']
+         out_datasets = ['iNaturalist','SUN', 'places365']
     test_loader = set_val_loader(args, preprocess)
     test_labels = get_test_labels(args, test_loader)
 
