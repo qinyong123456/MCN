@@ -61,9 +61,11 @@ def main():
     net.eval()
 
     if args.in_dataset in ['ImageNet10']: 
-        out_datasets = ['ImageNet20']
+        #out_datasets = ['ImageNet20']
+        out_datasets = ['iNaturalist','SUN', 'places365']
     elif args.in_dataset in ['ImageNet20']: 
-        out_datasets = ['ImageNet10']
+        #out_datasets = ['ImageNet10']
+        out_datasets = ['iNaturalist','SUN', 'places365']
     elif args.in_dataset in [ 'ImageNet', 'ImageNet100', 'bird200', 'car196', 'food101', 'pet37']:
          out_datasets = ['iNaturalist','SUN', 'places365', 'dtd']
     test_loader = set_val_loader(args, preprocess)
